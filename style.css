@@ -1,0 +1,114 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Header Logo */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+header .logo {
+  width: 150px;
+}
+
+/* Form Container */
+.form-container {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0070ba; /* PayPal blue */
+}
+
+/* Input Fields */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+form input:focus {
+  border-color: #0070ba;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  background: #0070ba;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005c9c;
+}
+
+/* Switch between login/signup */
+.switch-auth {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-auth a {
+  color: #0070ba;
+  text-decoration: none;
+}
+
+.switch-auth a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  color: #0070ba;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
