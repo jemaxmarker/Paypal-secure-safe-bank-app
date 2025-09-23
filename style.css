@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa; /* light gray background like PayPal */
+  color: #0c1c3f; /* dark blue text */
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0070ba; /* PayPal blue */
+  color: white;
+}
+
+.header .logo {
+  height: 40px;
+}
+
+.top-nav a.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #00457c; /* darker blue */
+  border-radius: 5px;
+}
+
+/* FORM CONTAINERS (LOGIN/SIGNUP) */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #0070ba;
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #0070ba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00457c;
+}
+
+.switch-auth {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-auth a {
+  color: #0070ba;
+  text-decoration: none;
+}
+
+/* DASHBOARD */
+.dashboard-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.balance-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.balance-section h2 {
+  color: #0070ba;
+  margin-bottom: 10px;
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0c1c3f;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  padding: 15px 25px;
+  background-color: #0070ba;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.action-btn:hover {
+  background-color: #00457c;
+}
+
+/* Transactions */
+.transactions {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.transactions h3 {
+  color: #0070ba;
+  margin-bottom: 15px;
+}
+
+.transaction-list {
+  list-style: none;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-list li:last-child {
+  border-bottom: none;
+}
+
+.transaction-name {
+  flex: 2;
+}
+
+.transaction-amount {
+  flex: 1;
+  text-align: right;
+}
+
+.transaction-date {
+  flex: 1;
+  text-align: right;
+  color: #888;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #888;
+  font-size: 14px;
+}
