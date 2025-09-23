@@ -1,0 +1,19 @@
+<!-- chat.html -->
+<div id="chat-widget">
+  <div id="chat-icon" onclick="toggleChat()">
+    🗨️
+  </div>
+  <div id="chat-box" class="hidden">
+    <div id="chat-header">
+      <span>Support Chat</span>
+      <button onclick="toggleChat()">✖</button>
+    </div>
+    <div id="chat-messages">
+      <!-- Messages from user and bot will appear here -->
+    </div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="checkEnter(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
