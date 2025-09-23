@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - PayPal Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- You can create a style.css to style like PayPal colors, buttons, and layout -->
+</head>
+<body>
+  <!-- HEADER: Logo + navigation -->
+  <header class="header">
+    <!-- PayPal logo -->
+    <img src="public/Screenshot_20250921-225034.png" alt="PayPal Logo" class="logo">
+    
+    <!-- Top right: Logout or user menu -->
+    <nav class="top-nav">
+      <a href="login.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="dashboard-container">
+    
+    <!-- BALANCE SECTION -->
+    <section class="balance-section">
+      <h2>My Balance</h2>
+      <p class="balance-amount">$1,250.00</p>
+      <!-- You can dynamically update this using backend or JS later -->
+    </section>
+
+    <!-- QUICK ACTIONS: Send, Request, Activity, Wallet -->
+    <section class="quick-actions">
+      <button class="action-btn">Send</button>
+      <button class="action-btn">Request</button>
+      <button class="action-btn">Activity</button>
+      <button class="action-btn">Wallet</button>
+    </section>
+
+    <!-- TRANSACTION HISTORY -->
+    <section class="transactions">
+      <h3>Recent Transactions</h3>
+      <ul class="transaction-list">
+        <li>
+          <span class="transaction-name">Payment to John Doe</span>
+          <span class="transaction-amount">-$50.00</span>
+          <span class="transaction-date">Sep 22, 2025</span>
+        </li>
+        <li>
+          <span class="transaction-name">Received from Alice</span>
+          <span class="transaction-amount">+$200.00</span>
+          <span class="transaction-date">Sep 21, 2025</span>
+        </li>
+        <li>
+          <span class="transaction-name">Subscription - Netflix</span>
+          <span class="transaction-amount">-$15.99</span>
+          <span class="transaction-date">Sep 20, 2025</span>
+        </li>
+        <!-- Add more transactions as needed -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 PayPal Bank. All rights reserved.</p>
+  </footer>
+</body>
+</html>
