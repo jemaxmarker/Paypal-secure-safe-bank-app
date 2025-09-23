@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPal Bank – Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- PayPal Logo -->
+  <div class="logo">
+    <img src="public/Screenshot_20250921-225034.png" alt="PayPal Logo">
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-container">
+    <h2>Login to Your Account</h2>
+    <form action="dashboard.html" method="POST">
+      <label for="email">Email or Phone</label>
+      <input type="text" id="email" name="email" placeholder="Enter Email or Phone" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+</body>
+</html>
