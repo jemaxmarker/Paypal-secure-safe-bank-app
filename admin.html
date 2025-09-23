@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - PayPal Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo at the top -->
+  <header>
+    <img src="public/Screenshot_20250921-225034.png" alt="PayPal Logo" class="logo">
+  </header>
+
+  <!-- Admin form -->
+  <main class="admin-container">
+    <h2>Admin Panel</h2>
+    <form action="update-settings.html" method="POST">
+      <label for="premium-amount">Premium Amount ($)</label>
+      <input type="number" id="premium-amount" name="premium-amount" placeholder="Enter premium amount" required>
+
+      <label for="voice-amount">Voice Call Amount ($)</label>
+      <input type="number" id="voice-amount" name="voice-amount" placeholder="Enter voice call amount" required>
+
+      <label for="human-escalation">Human Escalation Fee ($)</label>
+      <input type="number" id="human-escalation" name="human-escalation" placeholder="Enter fee" required>
+
+      <label for="urgency-fee">Urgency Fee ($)</label>
+      <input type="number" id="urgency-fee" name="urgency-fee" placeholder="Enter fee" required>
+
+      <label for="currency">Currency</label>
+      <select id="currency" name="currency">
+        <option value="USD">$ - Dollar</option>
+        <option value="NGN">₦ - Naira</option>
+      </select>
+
+      <button type="submit" class="btn">Update Settings</button>
+    </form>
+  </main>
+</body>
+</html>
