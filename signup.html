@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - PayPal Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with logo -->
+  <header class="header">
+    <img src="public/Screenshot_20250921-225034.png" alt="PayPal Logo" class="logo">
+  </header>
+
+  <!-- Sign up form -->
+  <main class="form-container">
+    <h2>Create an Account</h2>
+    <form action="dashboard.html" method="POST" class="signup-form">
+      
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email or Phone</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email or phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+      </div>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <!-- Switch to login -->
+    <p class="switch-auth">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </main>
+</body>
+</html>
